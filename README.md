@@ -19,3 +19,11 @@ This is a simple project for a Body Mass Index (BMI) Calculator implemented in H
 2.Click on the "Calculate" button to get the result.
 
 3.The result will display your BMI and a message based on the classification
+
+## Layout
+<img src="./public/img/image.png" />
+
+# License 📚
+[MIT license](LICENSE).
+
+Made by [Rychard Barros](https://github.com/rychardbarros)
