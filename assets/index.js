@@ -14,7 +14,7 @@ form.addEventListener('submit', function(ev) {
     if (name.trim() === '' || isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
         alert('Por favor, preencha todos os campos com valores válidos.');
     } else {
-        // Validação bem-sucedida, faça o cálculo do IMC aqui
+    
         const imc = weight / (height * height);
 
         if (imc < 18.5) {
@@ -30,12 +30,12 @@ form.addEventListener('submit', function(ev) {
         } else if (imc < 30) {
             classificacao = 'levemente acima do peso.';
             result.style.backgroundColor = 'yellow';
-            result.style.color = 'white'
+            result.style.color = 'black'
             result.innerHTML = `Ola ${name} seu IMC é: ${imc.toFixed(2)} - Você está levemente acima do peso.`;
         } else if (imc < 35) {
             classificacao = 'com obesidade grau I.';
             result.style.backgroundColor = 'orange';
-            result.style.color = 'white'
+            result.style.color = 'black'
             result.innerHTML = `Ola ${name} seu IMC é: ${imc.toFixed(2)} - Você está com obesidade grau I.`;
         } else if (imc < 40) {
             classificacao = 'com obesidade grau II';
